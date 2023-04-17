@@ -29,6 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 img {
   max-width: 100%;
@@ -36,4 +37,11 @@ img {
 .product {
   overflow: hidden;
   background: var(--white);
+  border-radius: 0.75rem;
+}
+.product-info {
+  border: solid 2px red;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
 }
