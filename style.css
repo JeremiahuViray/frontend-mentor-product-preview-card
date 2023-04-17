@@ -8,3 +8,32 @@
   --grayish-blue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
 }
+* {
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  min-height: 100vh;
+  font-size: 0.875rem;
+  margin: 1rem;
+  background: var(--cream);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+.product {
+  overflow: hidden;
+  background: var(--white);
+}
