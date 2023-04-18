@@ -34,22 +34,74 @@ body {
 img {
   max-width: 100%;
 }
+.product-image {
+  display: flex;
+  justify-content: center;
+}
 .product {
   overflow: hidden;
   background: var(--white);
   border-radius: 0.75rem;
 }
 .product-info {
-  padding: 1rem;
+  padding: 1.5rem;
   display: grid;
   gap: 1rem;
   color: var(--grayish-blue);
+  font-size: 1rem;
 }
 .product-type {
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
 }
-.product-title {
+.product-title,
+.discount-price {
   font-family: "Fraunces", sans-serif;
   color: var(--dark-blue);
   font-size: 2rem;
+}
+
+.product-description {
+  line-height: 1.4rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discount-price {
+  color: var(--dark-cyan);
+}
+
+.btn-cart {
+  background: var(--dark-cyan);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image2 {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 36rem;
+  }
+  .image1 {
+    display: none;
+  }
+  .image2 {
+    display: block;
+  }
 }
