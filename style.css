@@ -88,6 +88,11 @@ img {
   gap: 1rem;
 }
 
+.btn-cart:hover {
+  background: var(--dark-blue);
+  cursor: pointer;
+}
+
 .image2 {
   display: none;
 }
